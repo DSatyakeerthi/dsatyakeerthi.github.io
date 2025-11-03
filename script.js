@@ -60,29 +60,3 @@ displaySuccessMessage();
 
 
 
-// Function to check for the success flag in the URL and display a message
-function displaySuccessMessage() {
-    const urlParams = new URLSearchParams(window.location.search);
-    
-    // Check if the URL contains "?submitted=true" (set by the FormSubmit redirect)
-    if (urlParams.has('submitted') && urlParams.get('submitted') === 'true') {
-        
-        const contactSection = document.getElementById('contact');
-        
-        // Create the professional success message element
-        const successMessage = document.createElement('div');
-        successMessage.className = 'success-alert';
-        successMessage.textContent = '✅ Thank you! Your message was sent successfully and I will be in touch soon.';
-        
-        // Insert the message at the top of the contact section
-        contactSection.insertBefore(successMessage, contactSection.querySelector('.container').firstChild);
-
-        // Clean up: Remove the success flag from the URL after a few seconds
-        setTimeout(() => {
-            history.replaceState(null, '', window.location.pathname);
-        }, 5000); // Message is displayed for 5 seconds
-    }
-}
-
-// Call the function when the page loads
-displaySuccessMessage();
