@@ -1,10 +1,9 @@
-/* --- Global Styles --- */
 :root {
-    --primary-color: #007ACC; /* Professional Blue Accent */
-    --secondary-color: #2D3748; /* Dark Gray for secondary elements */
-    --bg-dark: #1A202c; /* Deep Black/Blue for main background */
-    --bg-light: #242D3C; /* Slightly lighter background for contrast sections */
-    --text-light: #E2E8F0; /* Off-White for text */
+    --primary-color: #007ACC; 
+    --secondary-color: #2D3748; 
+    --bg-dark: #1A202c; 
+    --bg-light: #242D3C;
+    --text-light: #E2E8F0;
     --font-stack: 'Poppins', sans-serif;
 }
 
@@ -41,7 +40,6 @@ body {
     font-weight: 700;
 }
 
-/* --- Buttons (CTAs) --- */
 .btn {
     display: inline-block;
     padding: 10px 25px;
@@ -74,7 +72,6 @@ body {
     color: var(--bg-dark);
 }
 
-/* --- Navigation Bar --- */
 .navbar {
     background-color: var(--bg-dark);
     padding: 20px 0;
@@ -108,13 +105,11 @@ body {
     color: var(--primary-color);
 }
 
-/* CSS rule for active link highlighting */
 .navbar a.active {
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
 }
 
-/* --- Hero Section --- */
 .hero {
     min-height: 80vh;
     display: flex;
@@ -149,10 +144,9 @@ body {
     margin: 0 10px;
 }
 
-/* --- About Section Specific Styles --- */
 .about-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* 2/3 for text, 1/3 for certifications */
+    grid-template-columns: 2fr 1fr;
     gap: 40px;
     align-items: flex-start;
 }
@@ -174,8 +168,6 @@ body {
     margin-bottom: 15px;
     font-size: 1.3em;
 }
-
-/* --- Experience Timeline --- */
 .timeline {
     position: relative;
     max-width: 900px;
@@ -198,7 +190,7 @@ body {
     position: absolute;
     left: -40px;
     top: 5px;
-    border: 3px solid var(--bg-dark); /* Changed from bg-light to bg-dark for contrast on this section */
+    border: 3px solid var(--bg-dark);
 }
 
 .timeline h4 {
@@ -232,7 +224,6 @@ body {
     font-size: 0.95em;
 }
 
-/* --- Skills Section (Badges) --- */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -271,7 +262,6 @@ body {
     cursor: default;
 }
 
-/* --- Projects Section --- */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -317,8 +307,6 @@ body {
 .project-link:hover {
     text-decoration: underline;
 }
-
-/* --- Contact Form Section Specific Styles --- */
 .contact-form-container {
     max-width: 600px;
     margin: 0 auto;
@@ -368,9 +356,6 @@ body {
     text-align: center;
 }
 
-
-
-/* --- Footer --- */
 footer {
     background-color: var(--bg-dark);
     padding: 40px 0;
@@ -383,8 +368,6 @@ footer a {
     color: var(--primary-color);
     text-decoration: none;
 }
-
-/* --- Media Queries for Responsiveness --- */
 @media (max-width: 768px) {
     .navbar .container {
         flex-direction: column;
@@ -411,7 +394,7 @@ footer a {
         display: none;
     }
     .about-grid {
-        grid-template-columns: 1fr; /* Stack on mobile */
+        grid-template-columns: 1fr;
     }
 }
 
